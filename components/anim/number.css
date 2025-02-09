@@ -1,0 +1,38 @@
+.anim-number {
+  /* display styles */
+  @apply relative inline-block;
+}
+
+/* origin value */
+.anim-number--origin-value {
+  /* display styles */
+  @apply invisible;
+}
+
+/* animated value */
+.anim-number--animated-value {
+  /* display styles */
+  @apply absolute top-0;
+
+  /* visual styles */
+  @apply opacity-0;
+
+  /* transition */
+  @apply transition-opacity ease-in-out duration-500;
+}
+
+.anim-number--animate .anim-number--animated-value {
+  /* visual styles */
+  @apply opacity-100;
+}
+
+/* align */
+.anim-number--left .anim-number--animated-value {
+  /* display styles */
+  @apply left-0;
+}
+
+.anim-number--right .anim-number--animated-value {
+  /* display styles */
+  @apply right-0;
+}

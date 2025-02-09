@@ -1,0 +1,79 @@
+/* root */
+.base-button--secondary {
+  /* display styles */
+  @apply px-6 py-[1.125rem];
+
+  /* visual styles */
+  @apply bg-base-button-secondary-background;
+}
+
+/* border */
+.base-button--secondary::before {
+  /* visual styles */
+  @apply bg-base-button-secondary-border;
+}
+
+/* round */
+.base-button--secondary,
+.base-button--secondary::before {
+  /* visual styles */
+  @apply rounded-[1.875rem];
+}
+
+/* icon */
+.base-button--secondary .base-button__icon {
+  /* visual styles */
+  @apply text-base-button-secondary-icon-foreground;
+}
+
+/* text */
+.base-button--secondary .base-button__text {
+  /* visual styles */
+  @apply bg-clip-text bg-base-secondary-foreground;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.base-button--secondary .base-button__icon + .base-button__text {
+  /* display styles */
+  @apply ml-2;
+}
+
+/* hover */
+/* bg */
+.base-button--secondary.base-hover::after {
+  /* visual styles */
+  @apply bg-base-button-secondary-hover-background;
+}
+
+/* icon */
+.base-button--secondary.base-hover:hover .base-button__icon,
+.base-button--secondary.base-hover--active .base-button__icon {
+  /* visual styles */
+  @apply text-base-button-secondary-icon-hover-foreground;
+}
+
+.base-button--secondary.base-hover:hover .base-button__icon stop:nth-child(1),
+.base-button--secondary.base-hover--active
+  .base-button__icon
+  stop:nth-child(1) {
+  /* visual styles */
+  stop-color: var(--base-button-secondary-icon-hover-foreground);
+}
+
+.base-button--secondary.base-hover:hover .base-button__icon stop:nth-child(2),
+.base-button--secondary.base-hover--active
+  .base-button__icon
+  stop:nth-child(2) {
+  /* visual styles */
+  stop-color: var(--base-button-secondary-icon-hover-foreground);
+}
+
+/* text */
+.base-button--secondary.base-hover:hover .base-button__text,
+.base-button--secondary.base-hover--active .base-button__text {
+  /* visual styles */
+  @apply bg-none bg-clip-border text-base-button-secondary-hover-foreground;
+
+  -webkit-text-fill-color: currentColor;
+}

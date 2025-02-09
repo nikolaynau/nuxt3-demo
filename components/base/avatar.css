@@ -1,0 +1,72 @@
+.base-avatar {
+  /* display styles */
+  @apply relative z-0;
+}
+
+.base-avatar__wrap {
+  /* display styles */
+  @apply relative z-[2] flex items-center justify-center overflow-hidden;
+
+  /* visual styles */
+  @apply bg-base-avatar-background;
+
+  /* size */
+  @apply w-[5.937rem] h-[5.937rem];
+}
+
+/* round */
+.base-avatar,
+.base-avatar__wrap,
+.base-avatar::before,
+.base-avatar::after {
+  /* visual styles */
+  @apply rounded-full;
+}
+
+/* border */
+.base-avatar::before {
+  /* display styles */
+  @apply z-[3] p-0.5;
+
+  /* visual styles */
+  @apply bg-base-avatar-border;
+}
+
+/* light */
+.base-avatar::after {
+  content: '';
+
+  /* display styles */
+  @apply absolute inset-x-px inset-y-px z-[1];
+
+  /* visual styles */
+  @apply bg-base-avatar-border blur-sm;
+}
+
+/* img */
+.base-avatar__img {
+  /* display styles */
+  @apply max-w-full max-h-full;
+}
+
+/* size */
+.base-avatar--sm .base-avatar__wrap {
+  /* display styles */
+  @apply w-[3.812rem] h-[3.812rem];
+}
+
+/* error */
+.base-avatar--error .base-avatar__img {
+  /* display styles */
+  @apply hidden;
+}
+
+/* adaptive */
+.base-avatar--adaptive .base-avatar__wrap {
+  /* display styles */
+  @apply w-[5.937rem] h-[5.937rem];
+  /* md */
+  @apply md:w-[3.812rem] md:h-[3.812rem];
+  /* 3xl */
+  @apply 3xl:w-[5.937rem] 3xl:h-[5.937rem];
+}

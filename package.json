@@ -1,0 +1,69 @@
+{
+  "name": "nuxt3-internal-demo",
+  "packageManager": "pnpm@9.15.4",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "build-demo": "cross-env BUILD_UI_KIT=1 pnpm run build",
+    "prebuild": "esno scripts/gen-ignore.ts",
+    "postbuild": "rimraf .nuxtignore",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "check": "nuxi typecheck",
+    "lint": "eslint --cache .",
+    "lint:fix": "pnpm run lint --fix",
+    "format": "prettier --write --cache .",
+    "prepare": "simple-git-hooks",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@commitlint/types": "^19.5.0",
+    "@nuxtjs/i18n": "^9.2.0",
+    "@types/node": "^22.13.1",
+    "@types/ua-parser-js": "^0.7.39",
+    "@types/uuid": "^10.0.0",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^14.3.0",
+    "@vueuse/core": "^12.5.0",
+    "@vueuse/math": "^12.5.0",
+    "@vueuse/nuxt": "^12.5.0",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.20.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "esno": "^4.8.0",
+    "lint-staged": "^15.4.3",
+    "nuxi": "^3.21.1",
+    "nuxt": "^3.15.4",
+    "popmotion": "^11.0.5",
+    "postcss": "^8.5.1",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "simple-git-hooks": "^2.11.1",
+    "swiper": "^11.2.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "ua-parser-js": "^2.0.1",
+    "uuid": "^11.0.5",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vue-tsc": "~2.1.6"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged --no-stash",
+    "commit-msg": "pnpm commitlint --edit"
+  },
+  "lint-staged": {
+    "*.{ts,vue}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{js,json,md,css}": [
+      "prettier --write"
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+.base-card {
+  /* display styles */
+  @apply relative z-0 flex flex-row items-stretch;
+}
+
+/* clip */
+.base-card--clip,
+.base-card--clip-content .base-card__wrap {
+  /* display styles */
+  @apply overflow-hidden;
+}
+
+/* no padding */
+.base-card--no-padding .base-card__wrap {
+  /* display styles */
+  @apply p-0;
+}
+
+/* round */
+.base-card__wrap,
+.base-card__overlay,
+.base-card__wrap.base-gradient-border::before,
+.base-card__overlay.base-gradient-border::before {
+  /* visual styles */
+  @apply rounded-[0.937rem];
+}
+
+/* wrapper */
+.base-card__wrap {
+  /* display styles */
+  @apply relative z-z-index-above-decor flex flex-row items-stretch w-full p-4;
+
+  /* visual styles */
+  @apply text-base-card-foreground;
+}
+
+/* backdrop */
+.base-card--backdrop .base-card__wrap {
+  /* visual styles */
+  @apply backdrop-blur-7;
+}
+
+/* border */
+/* default */
+.base-card__wrap.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-border;
+}
+
+/* success */
+.base-card--success .base-card__wrap.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-success-border;
+}
+
+/* danger */
+.base-card--danger .base-card__wrap.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-danger-border;
+}
+
+/* bg */
+/* default */
+.base-card--default .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-background;
+}
+
+/* success */
+.base-card--success .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-success-background;
+}
+
+/* danger */
+.base-card--danger .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-danger-background;
+}
+
+/* info */
+.base-card--info .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-info-background;
+}
+
+/* illum */
+.base-card--illum .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-illum-background;
+}
+
+/* lucid */
+.base-card--lucid .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-lucid-background;
+}
+
+/* accent */
+.base-card--accent .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-accent-background;
+}
+
+/* light */
+.base-card__light {
+  /* display styles */
+  @apply absolute -bottom-[0.812rem] left-1/2 -translate-x-1/2 z-z-index-decor;
+  /* md */
+  @apply md:-bottom-[0.25rem];
+
+  /* visual styles */
+  @apply blur-37 opacity-70 rounded-[50%];
+
+  /* sizes */
+  @apply w-[9.125rem] h-[3.31rem];
+}
+
+/* success */
+.base-card--success .base-card__light {
+  /* visual styles */
+  @apply bg-base-card-light-success-background;
+}
+
+/* danger */
+.base-card--danger .base-card__light {
+  /* display styles */
+  /* md */
+  @apply md:left-auto md:translate-x-0 md:right-0;
+
+  /* visual styles */
+  @apply bg-base-card-light-danger-background;
+}
+
+/* alt */
+/* default */
+.base-card--alt.base-card--default .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-alt-background;
+}
+
+/* success */
+.base-card--alt.base-card--success .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-success-alt-background;
+}
+
+/* danger */
+.base-card--alt.base-card--danger .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-danger-alt-background;
+}
+
+/* adaptive alt */
+/* default */
+.base-card--adaptive-alt.base-card--default .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-alt-background;
+  /* md */
+  @apply md:bg-base-card-background;
+}
+
+/* success */
+.base-card--adaptive-alt.base-card--success .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-success-alt-background;
+  /* md */
+  @apply md:bg-base-card-success-background;
+}
+
+/* danger */
+.base-card--adaptive-alt.base-card--danger .base-card__wrap {
+  /* visual styles */
+  @apply bg-base-card-danger-alt-background;
+  /* md */
+  @apply md:bg-base-card-danger-background;
+}

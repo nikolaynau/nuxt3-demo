@@ -1,0 +1,67 @@
+/* root */
+.base-button--normal {
+  /* display styles */
+  @apply px-4 py-3.5;
+}
+
+/* border */
+.base-button--normal::before {
+  /* visual styles */
+  @apply bg-base-button-border;
+}
+
+/* round */
+.base-button--normal,
+.base-button--normal::before {
+  /* visual styles */
+  @apply rounded-[3.75rem];
+}
+
+/* icon */
+.base-button--normal .base-button__icon {
+  /* visual styles */
+  @apply text-base-button-icon-foreground;
+}
+
+/* text */
+.base-button--normal .base-button__text {
+  /* visual styles */
+  @apply font-medium bg-clip-text bg-base-button-foreground;
+
+  -webkit-text-fill-color: transparent;
+}
+
+/* hover */
+/* bg */
+.base-button--normal.base-hover::after {
+  /* visual styles */
+  @apply bg-base-button-hover-background;
+}
+
+/* icon */
+.base-button--normal.base-hover:hover .base-button__icon,
+.base-button--normal.base-hover--active .base-button__icon {
+  /* visual styles */
+  @apply text-base-button-icon-hover-foreground;
+}
+
+.base-button--normal.base-hover:hover .base-button__icon stop:nth-child(1),
+.base-button--normal.base-hover--active .base-button__icon stop:nth-child(1) {
+  /* visual styles */
+  stop-color: var(--base-button-icon-hover-foreground);
+}
+
+.base-button--normal.base-hover:hover .base-button__icon stop:nth-child(2),
+.base-button--normal.base-hover--active .base-button__icon stop:nth-child(2) {
+  /* visual styles */
+  stop-color: var(--base-button-icon-hover-foreground);
+}
+
+/* text */
+.base-button--normal.base-hover:hover .base-button__text,
+.base-button--normal.base-hover--active .base-button__text {
+  /* visual styles */
+  @apply bg-none bg-clip-border text-base-button-hover-foreground;
+
+  -webkit-text-fill-color: currentColor;
+}

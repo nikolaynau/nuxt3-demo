@@ -1,0 +1,14 @@
+.base-slider--clip {
+  /* display styles */
+  @apply overflow-hidden;
+}
+
+/* header */
+.base-slider__header {
+  /* display styles */
+  @apply mb-8;
+  /* md */
+  @apply md:mb-[1.875rem];
+  /* 3xl */
+  @apply 3xl:mb-10;
+}

@@ -1,0 +1,36 @@
+.effect-glow {
+  /* display styles */
+  @apply absolute inset-x-0 inset-y-0 pointer-events-none;
+
+  /* visual styles */
+  @apply select-none;
+
+  /* mask */
+  mask: radial-gradient(
+    var(--vc-mask-size) var(--vc-mask-size) at
+      var(--vc-x, calc(-1 * var(--vc-mask-size)))
+      var(--vc-y, calc(-1 * var(--vc-mask-size))),
+    #000 1%,
+    transparent 50%
+  );
+
+  /* transition */
+  transition: 400ms mask ease;
+  will-change: mask;
+}
+
+/* sizes */
+/* md */
+.effect-glow--md {
+  --vc-mask-size: 25rem;
+}
+
+/* sm */
+.effect-glow--sm {
+  --vc-mask-size: 15rem;
+}
+
+/* xs */
+.effect-glow--xs {
+  --vc-mask-size: 10rem;
+}

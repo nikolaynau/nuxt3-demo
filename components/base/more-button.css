@@ -1,0 +1,37 @@
+.base-more-button {
+  /* display styles */
+  @apply inline-flex flex-row items-center min-w-[2rem];
+
+  /* visual styles */
+  @apply opacity-70 hover:opacity-100;
+  /* sm, md */
+  @apply max-lg:opacity-100;
+
+  /* transition */
+  @apply transition-opacity duration-300;
+}
+
+/* icon */
+.base-more-button__icon {
+  /* display styles */
+  @apply mr-2 flex-shrink-0 -rotate-45;
+
+  /* visual styles */
+  @apply text-2xl;
+
+  /* transition */
+  @apply transition-transform duration-300;
+}
+
+.base-more-button:hover .base-more-button__icon {
+  /* display styles */
+  @apply rotate-0;
+}
+
+/* text */
+.base-more-button__text {
+  /* visual styles */
+  @apply text-base leading-tight font-medium whitespace-nowrap truncate;
+  /* 3xl */
+  @apply 3xl:text-lg 3xl:leading-[1.27];
+}

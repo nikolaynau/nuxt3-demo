@@ -1,0 +1,8 @@
+/* disabled */
+.base-button--disabled {
+  /* display styles */
+  @apply pointer-events-none;
+
+  /* visual styles */
+  @apply opacity-50;
+}

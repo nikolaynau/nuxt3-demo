@@ -1,0 +1,76 @@
+/* root */
+.base-button--light {
+  /* display styles */
+  @apply px-4 py-3.5;
+}
+
+/* border */
+.base-button--light::before {
+  /* visual styles */
+  @apply bg-base-button-light-border;
+}
+
+/* round */
+.base-button--light,
+.base-button--light::before {
+  /* visual styles */
+  @apply rounded-[3.75rem];
+}
+
+/* icon */
+.base-button--light .base-button__icon {
+  /* visual styles */
+  @apply text-base-button-light-icon-foreground;
+}
+
+.base-button--light .base-button__icon stop:nth-child(1) {
+  /* visual styles */
+  stop-color: var(--base-button-light-icon-foreground);
+}
+
+.base-button--light .base-button__icon stop:nth-child(2) {
+  /* visual styles */
+  stop-color: var(--base-button-light-icon-foreground);
+}
+
+/* text */
+.base-button--light .base-button__text {
+  /* visual styles */
+  @apply font-medium text-base-button-light-foreground;
+}
+
+/* hover */
+/* bg */
+.base-button--light.base-hover::after,
+.base-button--light.base-hover--active::after {
+  /* visual styles */
+  @apply bg-base-button-light-hover-background;
+}
+
+/* icon */
+.base-button--light.base-hover:hover .base-button__icon,
+.base-button--light.base-hover--active .base-button__icon {
+  /* visual styles */
+  @apply text-base-button-light-icon-hover-foreground;
+}
+
+.base-button--light.base-hover:hover .base-button__icon stop:nth-child(1),
+.base-button--light.base-hover--active .base-button__icon stop:nth-child(1) {
+  /* visual styles */
+  stop-color: var(--base-button-light-icon-hover-foreground-from);
+}
+
+.base-button--light.base-hover:hover .base-button__icon stop:nth-child(2),
+.base-button--light.base-hover--active .base-button__icon stop:nth-child(2) {
+  /* visual styles */
+  stop-color: var(--base-button-light-icon-hover-foreground-to);
+}
+
+/* text */
+.base-button--light.base-hover:hover .base-button__text,
+.base-button--light.base-hover--active .base-button__text {
+  /* visual styles */
+  @apply bg-clip-text bg-base-button-light-hover-foreground;
+
+  -webkit-text-fill-color: transparent;
+}

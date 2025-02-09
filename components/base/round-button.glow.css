@@ -1,0 +1,9 @@
+.base-round-button--glow .effect-glow {
+  /* display styles */
+  @apply z-[4];
+}
+
+.base-round-button--glow .effect-glow .base-round-button {
+  /* display styles */
+  @apply absolute inset-x-0 inset-y-0;
+}

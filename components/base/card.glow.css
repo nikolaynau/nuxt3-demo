@@ -1,0 +1,108 @@
+.base-card--glow > .effect-glow {
+  /* display styles */
+  @apply z-z-index-overlay-decor;
+}
+
+/* overlay */
+.base-card__overlay {
+  /* display styles */
+  @apply absolute inset-x-0 inset-y-0;
+}
+
+/* border */
+.base-card__overlay.base-gradient-border::before {
+  /* display styles */
+  @apply p-2px;
+}
+
+/* only border */
+.base-card--glow.base-card--glow-border .base-card__overlay {
+  /* visual styles */
+  @apply bg-none;
+}
+
+/* border */
+/* default */
+.base-card--default .base-card__overlay.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-overlay-border;
+}
+
+/* illum */
+.base-card--illum .base-card__overlay.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-illum-overlay-border;
+}
+
+/* info */
+.base-card--info .base-card__overlay.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-info-overlay-border;
+}
+
+/* accent */
+.base-card--accent .base-card__overlay.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-overlay-border;
+}
+
+/* lucid */
+.base-card--lucid .base-card__overlay.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-lucid-overlay-border;
+}
+
+/* success */
+.base-card--success .base-card__overlay.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-success-overlay-border;
+}
+
+/* danger */
+.base-card--danger .base-card__overlay.base-gradient-border::before {
+  /* visual styles */
+  @apply bg-base-card-danger-overlay-border;
+}
+
+/* bg */
+/* default */
+.base-card--default .base-card__overlay {
+  /* visual styles */
+  @apply bg-base-card-overlay-background;
+}
+
+/* illum */
+.base-card--illum .base-card__overlay {
+  /* visual styles */
+  @apply bg-base-card-illum-overlay-background;
+}
+
+/* info */
+.base-card--info .base-card__overlay {
+  /* visual styles */
+  @apply bg-base-card-info-overlay-background;
+}
+
+/* lucid */
+.base-card--lucid .base-card__overlay {
+  /* visual styles */
+  @apply bg-base-card-lucid-overlay-background;
+}
+
+/* accent */
+.base-card--accent .base-card__overlay {
+  /* visual styles */
+  @apply bg-base-card-overlay-background;
+}
+
+/* success */
+.base-card--success .base-card__overlay {
+  /* visual styles */
+  @apply bg-base-card-success-overlay-background;
+}
+
+/* danger */
+.base-card--danger .base-card__overlay {
+  /* visual styles */
+  @apply bg-base-card-danger-overlay-background;
+}

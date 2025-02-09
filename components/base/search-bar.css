@@ -1,0 +1,71 @@
+.base-search-bar {
+  /* display styles */
+  @apply flex flex-row flex-nowrap items-center w-full px-4 rounded-[3.75rem];
+  /* md */
+  @apply md:w-[12.75rem];
+  /* 3xl */
+  @apply 3xl:w-[22.43rem];
+
+  /* visual styles */
+  @apply bg-base-search-bar-background;
+}
+
+.base-search-bar::before {
+  /* visual styles */
+  @apply bg-base-search-bar-border transition-opacity opacity-30 rounded-[3.75rem];
+}
+
+.base-search-bar--focused::before {
+  /* visual styles */
+  @apply opacity-100;
+}
+
+/* icon */
+.base-search-bar__icon {
+  /* display styles */
+  @apply shrink-0 mr-2.5;
+
+  /* visual styles */
+  @apply text-2xl leading-none;
+
+  /* cursor */
+  @apply cursor-pointer;
+}
+
+/* input */
+.base-search-bar__input {
+  /* display styles */
+  @apply flex-grow w-full h-10;
+  /* 3xl */
+  @apply 3xl:h-11;
+
+  /* visual styles */
+  @apply text-sm text-base-search-bar-foreground bg-transparent outline-none;
+  /* 3xl */
+  @apply 3xl:text-base;
+}
+
+.base-search-bar__input::placeholder {
+  /* visual styles */
+  @apply bg-base-search-bar-placeholder bg-clip-text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+/* back button */
+.base-search-bar__back-button {
+  /* display styles */
+  @apply shrink-0 mr-2.5;
+
+  /* visual styles */
+  @apply text-xl leading-none;
+}
+
+/* clear button */
+.base-search-bar__clear-button {
+  /* display styles */
+  @apply shrink-0 ml-1.5;
+
+  /* visual styles */
+  @apply text-xl leading-none;
+}

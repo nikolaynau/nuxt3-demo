@@ -1,0 +1,32 @@
+.backdrop {
+  /* display styles */
+  @apply block fixed inset-x-0 inset-y-0 z-z-index-backdrop;
+  /* md */
+  @apply md:hidden;
+
+  /* visual styles */
+  @apply backdrop-blur-7;
+}
+
+.backdrop--light {
+  /* visual styles */
+  @apply bg-backdrop-light-background;
+}
+
+.backdrop--medium {
+  /* visual styles */
+  @apply bg-backdrop-medium-background backdrop-blur-17;
+}
+
+/* fade */
+.backdrop-fade-enter-active,
+.backdrop-fade-leave-active {
+  /* transition */
+  @apply transition-opacity duration-300;
+}
+
+.backdrop-fade-enter-from,
+.backdrop-fade-leave-to {
+  /* visual styles */
+  @apply opacity-0;
+}

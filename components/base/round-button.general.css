@@ -1,0 +1,94 @@
+.base-round-button {
+  /* display styles */
+  @apply relative z-0 inline-flex justify-center items-center overflow-hidden;
+
+  /* visual styles */
+  @apply text-base-round-button-foreground;
+}
+
+/* sizes */
+/* sm */
+.base-round-button--sm {
+  /* display styles */
+  @apply w-11 h-11;
+}
+
+/* md */
+.base-round-button--md {
+  /* display styles */
+  @apply w-12 h-12;
+}
+
+/* lg */
+.base-round-button--lg {
+  /* display styles */
+  @apply w-[3.75rem] h-[3.75rem];
+}
+
+/* round */
+.base-round-button,
+.base-round-button::before {
+  /* visual styles */
+  @apply rounded-full;
+}
+
+/* border */
+.base-round-button::before {
+  /* display styles */
+  @apply z-[1];
+
+  /* visual styles */
+  @apply bg-base-round-button-border;
+}
+
+/* icon */
+.base-round-button__icon {
+  /* display styles */
+  @apply relative z-[3] flex-shrink-0;
+
+  /* visual styles */
+  @apply text-2xl;
+}
+
+/* hover */
+/* bg */
+.base-round-button.base-hover::after {
+  /* display styles */
+  @apply z-[2];
+
+  /* visual styles */
+  @apply bg-base-round-button-hover-background;
+}
+
+/* text */
+.base-round-button.base-hover:hover,
+.base-parent-hover:hover .base-round-button.base-hover,
+.base-round-button.base-hover--active {
+  /* visual styles */
+  @apply text-base-round-button-hover-foreground;
+}
+
+/* icon */
+.base-round-button.base-hover:hover .base-round-button__icon stop:nth-child(1),
+.base-parent-hover:hover
+  .base-round-button.base-hover
+  .base-round-button__icon
+  stop:nth-child(1),
+.base-round-button.base-hover--active
+  .base-round-button__icon
+  stop:nth-child(1) {
+  /* visual styles */
+  stop-color: var(--base-round-button-hover-foreground);
+}
+
+.base-round-button.base-hover:hover .base-round-button__icon stop:nth-child(2),
+.base-parent-hover:hover
+  .base-round-button.base-hover
+  .base-round-button__icon
+  stop:nth-child(2),
+.base-round-button.base-hover--active
+  .base-round-button__icon
+  stop:nth-child(2) {
+  /* visual styles */
+  stop-color: var(--base-round-button-hover-foreground);
+}

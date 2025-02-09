@@ -1,0 +1,4 @@
+.base-space {
+  /* display styles */
+  @apply flex-grow;
+}

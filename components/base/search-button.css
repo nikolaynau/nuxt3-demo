@@ -1,0 +1,7 @@
+.base-search-button {
+  /* display styles */
+  @apply inline-flex items-center justify-center w-8 h-8;
+
+  /* visual styles */
+  @apply text-2xl;
+}

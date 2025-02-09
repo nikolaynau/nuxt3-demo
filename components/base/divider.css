@@ -1,0 +1,13 @@
+.base-divider {
+  /* display styles */
+  @apply w-px h-[2.562rem] mx-2.5;
+
+  /* visual styles */
+  @apply border-l border-solid border-base-divider-border;
+}
+
+.base-divider--adaptive {
+  /* display styles */
+  /* 3xl */
+  @apply 3xl:h-[3.125rem];
+}

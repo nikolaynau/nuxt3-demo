@@ -1,0 +1,51 @@
+/* root */
+.base-button {
+  /* display styles */
+  @apply relative z-0 inline-flex flex-row items-center overflow-hidden;
+}
+
+/* border */
+.base-button::before {
+  /* display styles */
+  @apply z-[1];
+}
+
+/* hover */
+.base-button.base-hover::after {
+  /* display styles */
+  @apply z-[2];
+}
+
+/* icon */
+.base-button__icon {
+  /* display styles */
+  @apply relative z-[3] flex-shrink-0;
+
+  /* visual styles */
+  @apply text-2xl;
+}
+
+/* text */
+.base-button__text {
+  /* display styles */
+  @apply relative z-[3] flex-grow;
+
+  /* visual styles */
+  @apply text-lg leading-[1.28] whitespace-nowrap truncate;
+}
+
+.base-button__icon + .base-button__text {
+  /* display styles */
+  @apply ml-2.5;
+}
+
+/* text sm */
+.base-button.base-button--text-sm .base-button__text {
+  /* visual styles */
+  @apply text-sm leading-[1.64];
+}
+
+.base-button.base-button--text-sm .base-button__icon + .base-button__text {
+  /* display styles */
+  @apply ml-2;
+}

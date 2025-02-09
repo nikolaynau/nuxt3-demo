@@ -1,0 +1,44 @@
+/* text */
+.base-heading__text {
+  /* visual styles */
+  @apply text-base-heading-foreground;
+}
+
+h1.base-heading__text {
+  /* visual styles */
+  @apply text-3xl leading-[1.1] font-bold uppercase;
+  /* md */
+  @apply md:text-[2.625rem] md:leading-[1.2];
+  /* 3xl */
+  @apply 3xl:text-6xl 3xl:leading-[1.2];
+}
+
+h2.base-heading__text {
+  /* visual styles */
+  @apply text-2xl leading-[1.1] font-medium;
+  /* md */
+  @apply md:text-[2.5rem] md:leading-[1.1];
+  /* 3xl */
+  @apply 3xl:text-5xl 3xl:leading-none;
+}
+
+/* subtext */
+.base-heading__subtext {
+  /* visual styles */
+  @apply text-base leading-[1.4] text-base-heading-subtext-foreground uppercase break-words;
+  /* md */
+  @apply md:text-2xl md:leading-[1.4];
+  /* 3xl */
+  @apply 3xl:text-3xl 3xl:leading-[1.2];
+}
+
+/* line */
+.base-heading--line {
+  /* display styles */
+  @apply min-w-0;
+}
+
+.base-heading--line .base-heading__text {
+  /* visual styles */
+  @apply whitespace-nowrap truncate;
+}

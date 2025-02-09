@@ -1,0 +1,24 @@
+.base-round-button--disabled {
+  /* display styles */
+  @apply pointer-events-none;
+
+  /* visual styles */
+  @apply text-base-round-button-disabled-foreground;
+}
+
+/* border */
+.base-round-button--disabled::before {
+  /* visual styles */
+  @apply bg-none bg-base-round-button-disabled-border;
+}
+
+/* icon */
+.base-round-button--disabled .base-round-button__icon stop:nth-child(1) {
+  /* visual styles */
+  stop-color: var(--base-round-button-disabled-foreground);
+}
+
+.base-round-button--disabled .base-round-button__icon stop:nth-child(2) {
+  /* visual styles */
+  stop-color: var(--base-round-button-disabled-foreground);
+}

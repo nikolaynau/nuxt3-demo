@@ -1,0 +1,28 @@
+.base-slider-header {
+  /* display styles */
+  @apply flex flex-row justify-between items-center;
+}
+
+/* caption */
+.base-slider-header__caption {
+  /* display styles */
+  @apply mr-4;
+
+  /* visual styles */
+  @apply text-xl leading-[1.1] font-bold;
+  /* md */
+  @apply md:text-2xl md:leading-[1.1];
+  /* 3xl */
+  @apply 3xl:font-normal;
+}
+
+/* navigation */
+.base-slider-header__nav {
+  /* display styles */
+  @apply flex flex-row items-center;
+}
+
+.base-slider-header__nav > * {
+  /* display styles */
+  @apply mr-2 last:mr-0;
+}
