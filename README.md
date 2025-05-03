@@ -1,6 +1,7 @@
 # Nuxt3 Demo
 
-https://nuxt3-demo-nikolaynau.vercel.app/
+- https://nuxt3-demo-nikolaynau.vercel.app — адаптивная верстка с интересным визуальным эффектом.
+- https://nuxt3-demo-nikolaynau.vercel.app/ui — пример UI Kit  данного проекта.
 
 ## Обзор
 Этот проект предназначен **только для демонстрации кода** на Nuxt 3. Проект **не предназначен** для сборки или использования в продакшене.
