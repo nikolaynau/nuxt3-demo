@@ -1,16 +1,24 @@
 # Nuxt3 Demo
 
-- https://nuxt3-demo-nikolaynau.vercel.app — адаптивная верстка с интересным визуальным эффектом.
-- https://nuxt3-demo-nikolaynau.vercel.app/ui — пример UI Kit  данного проекта.
+* [https://nuxt3-demo-nikolaynau.vercel.app](https://nuxt3-demo-nikolaynau.vercel.app) — responsive layout with an interesting visual effect.
+* [https://nuxt3-demo-nikolaynau.vercel.app/ui](https://nuxt3-demo-nikolaynau.vercel.app/ui) — example of the project's UI Kit.
 
-## Обзор
-Этот проект предназначен **только для демонстрации кода** на Nuxt 3. Проект **не предназначен** для сборки или использования в продакшене.
+## Overview
 
-## Структура
-Примеры кода в этом проекте представлены **только** в следующих директориях:
-- `components/` – содержит UI-компоненты, демонстрирующие различные возможности Nuxt 3.
-- `composables/` – включает в себя переиспользуемую логику и утилиты.
+This project is intended **for code demonstration purposes only** using Nuxt 3. It is **not meant** to be built or used in production.
 
-## Примечания
-- Этот проект **не** включает полноценную настройку Nuxt 3.
-- Некоторые зависимости или конфигурации могут отсутствовать, так как он не предназначен для запуска.
+## Structure
+
+Code examples in this project are provided **only** in the following directories:
+
+* `components/` – contains UI components demonstrating various Nuxt 3 features.
+* `composables/` – includes reusable logic and utilities.
+
+## Notes
+
+* This project **does not** include a complete Nuxt 3 setup.
+* Some dependencies or configurations may be missing, as the project is not designed to be run directly.
+
+---
+
+Let me know if you want to adjust the tone (e.g., more formal or more concise).
